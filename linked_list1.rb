@@ -35,7 +35,6 @@ class Stack
     @data = @data.next_node
     popped
   end
-
 end
 
 def reverse_list(list)

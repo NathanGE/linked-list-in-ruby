@@ -8,11 +8,6 @@ class LinkedListNode
   end
 end
 
-node1 = LinkedListNode.new(37)
-node2 = LinkedListNode.new(99, node1)
-node3 = LinkedListNode.new(12, node2)
-
-
 def print_values(list_node)
   if list_node
     print "#{list_node.value} --> "
@@ -30,8 +25,3 @@ def reverse_list(list, previous=nil)
   end
   previous
 end
-
-print_values(node3) # 12 --> 99 --> 37 --> nil
-puts "-------"
-revlist = reverse_list(node3)
-print_values(revlist) # 37 --> 99 --> 12 --> nil

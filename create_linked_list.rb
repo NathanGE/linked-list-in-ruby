@@ -1,4 +1,5 @@
 # Create a Linked List class and print values method from scratch
+# then reverse it with a Stack.
 class LinkedListNode
   attr_accessor :value, :next_node
 
@@ -49,10 +50,3 @@ end
 node1 = LinkedListNode.new(37)
 node2 = LinkedListNode.new(99, node1)
 node3 = LinkedListNode.new(12, node2)
-
-# s = Stack.new
-# s.push(node3)
-# s.push(node2)
-# s.push(node1)
-# reversed = reverse_list(node3)
-# printValues(reversed)

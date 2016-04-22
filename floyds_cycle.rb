@@ -18,11 +18,3 @@ def floyds_cycle(listNode)
   end
   'No loop found'
 end
-
-# node1 = LinkedListNode.new(37)
-# node2 = LinkedListNode.new(99, node1)
-# node3 = LinkedListNode.new(12, node2)
-# node4 = LinkedListNode.new(24, node3)
-# node1.next_node = node3
-
-# p floyds_cycle(node4)
