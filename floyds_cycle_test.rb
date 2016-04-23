@@ -9,9 +9,8 @@ class TestFloydsCycle < Minitest::Unit::TestCase
     node1.next_node = node3
     node4 = LinkedListNode.new(22)
     node5 = LinkedListNode.new(43, node4)
-    looper = 'Loop found'
-    no_loop = 'No loop found'
-    assert_equal looper, floyds_cycle(node3)
-    assert_equal no_loop, floyds_cycle(node5)
+    assert_equal true, cycle?(node3)
+    assert_equal false, cycle?(node5)
+    assert_equal false, cycle?(node4)
   end
 end

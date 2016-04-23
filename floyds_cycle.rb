@@ -8,13 +8,14 @@ class LinkedListNode
   end
 end
 
-def floyds_cycle(listNode)
-  tortoise = listNode
-  hare = listNode
+def cycle?(list_node)
+  return false if list_node.nil? || list_node.next_node.nil?
+  tortoise = list_node
+  hare = list_node
   while hare.next_node.next_node do
     tortoise = tortoise.next_node
     hare = hare.next_node.next_node
-    return 'Loop found' if (tortoise == hare)
+    return true if tortoise == hare
   end
-  'No loop found'
+  false
 end
